@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon start -->
+    <link rel="shortcut icon" href="images/images.jpg" type="image/x-icon">
+    <!-- favicon end -->
+    <!--  teilwind strat -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  teilwind end -->
+    <title>Bank Inside</title>
+</head>
+
+<body class="bg-fuchsia-200">
+    <nav class="bg-violet-500 flex p-1">
+        <a href=""><img class="rounded-full w-14 ml-6 mr-4"
+                src="images/WhatsApp Image 2023-07-22 at 12.42.01 PM (2).jpeg" alt=""></a>
+        <div class="ml-10 mt-3">
+            <a class="text-xl mr-4" href="">Home</a>
+            <a class="text-xl mr-4" href="">Blog</a>
+            <a class="text-xl mr-4" href="">Contact</a>
+            <a class="text-xl mr-4" href="">About</a>
+        </div>
+        <button id="btn-logout"
+            class="bg-green-500 hover:bg-green-700 px-6 py-1 text-xl rounded text-white h-10 mt-2 ml-96">Logout</button>
+    </nav>
+    <header class="mb-24  mt-14">
+        <h1 class="text-5xl text-center">Let's Get Some <span class="font-bold text-cyan-300">Moooooooney
+            </span>!<span class="font-bold text-cyan-300">!</span>!</h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white mb-10">
+                <div class="bg-yellow-400 px-6 py-4 rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl font-semibold">$<span id="deposit-amount">00</span></h2>
+                </div>
+                <div class="bg-violet-500 px-6 py-4 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl font-semibold">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-fuchsia-500 px-6 py-4 rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl font-semibold">$<span id="balance-total">1240</span></h2>
+                </div>
+
+            </div>
+        </section>
+        <!-- deposit and withdraw -->
+        <section class="mb-10">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-teal-500 px-6 py-4 rounded-xl">
+                    <h4 class="text-2xl mb-6 text-white">Please Deposit</h4>
+                    <input class="w-9/12 block mb-4 rounded px-3 py-1 border-2 border-black" type="text" name=""
+                        id="deposit" placeholder="$ Amount You Want To Deposit">
+                    <button class="bg-cyan-300 px-8 py-1 rounded font-semibold text-lg hover:bg-cyan-400 text-white"
+                        id="btn-deposit">Deposit</button>
+                </div>
+                <div class="bg-teal-400 px-6 py-4 rounded-xl">
+                    <h4 class="text-2xl mb-4 text-white">Please Withdraw</h4>
+                    <input class="w-9/12 block mb-4 rounded px-3 py-1 border-2 border-black" type="text" name=""
+                        id="withdraw-field" placeholder="$ Amount You Want To Withdraw">
+                    <button class="bg-cyan-300 px-8 py-1 rounded font-semibold text-lg hover:bg-cyan-400 text-white"
+                        id="btn-withdraw">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bank.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
